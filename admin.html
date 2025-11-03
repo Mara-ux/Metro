@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/SibWay.png" />
+    <title>Админ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="admin_menu_btn"><img src="img/menuIcon.svg" alt=""></div>
+    <div class="nav_panel">
+        <div class="adm_wrapper">
+            <div class="panel_info">
+                <div class="closeBtn"><img src="img/close_btn.svg" alt=""></div>
+                <div class="panel_icon"><img src="img/admin_icon.png" alt=""></div>
+                <div class="admin_info">
+                    <div class="panel_info_title">Admin</div>
+                    <div class="panel_info_role">Администратор</div>
+                </div>
+            </div>
+            <div class="panel_links">
+                <a href="admin_main.html" class="main_link">Главная</a>
+                <div class="admin_stations_btn">Станции</div>
+                <div class="adm_line_wrapper">
+                    <div class="admin_line">Ленинская</div>
+                    <div class="admin_stations">
+                        <div class="adm_stations_links">
+                            <a href="admin.html" class="admin_station">Площадь маркса</a>
+                            <a href="admin.html" class="admin_station">Студенческая</a>
+                            <a href="admin.html" class="admin_station">Спортивная</a>
+                        </div>
+                        <div class="add_btn">добавить</div>
+                    </div>
+                    <div class="admin_line">дзержинская</div>
+                    <div class="admin_stations">
+                        <div class="adm_stations_links">
+                            <a href="admin.html" class="admin_station">Площадь Гарина Михайловского</a>
+                            <a href="admin.html" class="admin_station">Сибирская</a>
+                            <a href="admin.html" class="admin_station">Маршала Покрышкина</a>
+                        </div>
+                        <div class="add_btn">добавить</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin_btns">
+            <div class="admin_btn">сохранить</div>
+            <div class="admin_btn">выйти</div>
+        </div>
+    </div>
+
+    <div class="station_admin admin">
+        <div class="station_admin_titlebar">
+            <div class="station_admin_title">Площадь маркса</div>
+            <div class="delite_btn">Удалить станцию</div>
+        </div>
+        <div class="station_edit">
+            <div class="edit_item text_info">
+                <div class="edit_item_title">Заголовок</div>
+                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса">
+            </div>
+            <div class="edit_item text_info">
+                <div class="edit_item_title">Дата</div>
+                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса">
+            </div>
+            <div class="edit_item text_info">
+                <div class="edit_item_title">описание</div>
+                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса">
+            </div>
+            <div class="edit_item image_loading">
+                <div class="edit_item_title">фото</div>
+                <div class="imges_wrapper">
+                    <label for="file-upload" class="custom-file-upload"><img src="img/photo.png" alt=""></label>
+                    <input id="file-upload" type="file" accept="image/*">
+                    <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
+                    <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
+                    <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="edit_item comlex">
+                <div class="edit_item text_info">
+                    <div class="edit_item_title">Заголовок</div>
+                    <input type="text" placeholder="Площадь Маркса">
+                    <input type="text" placeholder="Площадь Маркса">
+                </div>
+                <div class="edit_item inner_wrapper">
+                    <div class="edit_item inner">
+                        <div class="closeBtn"><img src="img/xIcon.png" alt=""></div>
+                        <div class="inner_item">
+                            <div class="edit_item text_info">
+                                <div class="edit_item_title">Дата</div>
+                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса">
+                            </div>
+                        </div>
+                        <div class="inner_item">
+                            <div class="edit_item text_info">
+                                <div class="edit_item_title">описание</div>
+                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_item">
+                        <div class="add_item_text">Добавить временной промежуток</div>
+                        <div class="add_item_icon"><img src="img/add_icon.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="edit_item comlex">
+                <div class="edit_item text_info">
+                    <div class="edit_item_title slider_title">Слайдер</div>
+                </div>
+                <div class="edit_item inner_wrapper">
+                    <div class="iner_title">Слайд 1</div>
+                    <div class="edit_item inner">
+                        <div class="closeBtn"><img src="img/xIcon.png" alt=""></div>
+                        <div class="inner_item">
+                            <div class="edit_item text_info">
+                                <div class="edit_item_title">Заголовок</div>
+                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса">
+                            </div>
+                        </div>
+                        <div class="inner_item">
+                            <div class="edit_item text_info">
+                                <div class="edit_item_title">описание</div>
+                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса">
+                            </div>
+                        </div>
+                        <div class="imges_wrapper">
+                            <label for="file-upload" class="custom-file-upload"><img src="img/photo.png" alt=""></label>
+                            <input id="file-upload" type="file" accept="image/*">
+                            <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
+                            <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="add_item">
+                        <div class="add_item_text">Добавить слайд</div>
+                        <div class="add_item_icon"><img src="img/add_icon.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="edit_item comlex">
+                <div class="edit_item text_info">
+                    <div class="edit_item_title slider_title">Выходы</div>
+                </div>
+                <div class="edit_item text_info">
+                    <div class="edit_item_title">Карта</div>
+                    <input type="text" placeholder="Площадь Маркса">
+                </div>
+                <div class="edit_item inner_wrapper">
+                    <div class="iner_title">Выход 1</div>
+                    <div class="edit_item inner">
+                        <div class="closeBtn"><img src="img/xIcon.png" alt=""></div>
+                        <div class="inner_item">
+                            <div class="edit_item text_info">
+                                <div class="edit_item_title">Заголовок</div>
+                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_item">
+                        <div class="add_item_text">Добавить слайд</div>
+                        <div class="add_item_icon"><img src="img/add_icon.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/SibWay.png" />
+    <title>Путь вдоль метрополитена</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="icon"><img src="img/SibWay.png" alt="SibWayLogo"></a>
+        <div class="stations">Станции</div>
+        <div class="cont">
+            <a href="index.html#about">О нас</a>
+            <div class="langIcons">
+                <div class="langIcon" id="ru">RU</div>
+                <div class="langIcon" id="en">EN</div>
+            </div>
+        </div>
+        <div class="menu_btn"><img class="menuIcon" src="img/menuIcon.svg" alt=""></div>
+    </nav>
+    <section class="nav_menu">
+        <div class="nav_line_name">Ленинская</div>
+        <div class="nav_stations">
+            <a href="station.html" class="nav_station">Площадь маркса</a>
+            <a href="" class="nav_station">Студенческая</a>
+            <a href="" class="nav_station">Спортивная</a>
+            <a href="" class="nav_station">Речной вокзал</a>
+            <a href="" class="nav_station">Октябрьская</a>
+            <a href="" class="nav_station">Площадь Ленина</a>
+            <a href="" class="nav_station">Красный проспект</a>
+            <a href="" class="nav_station">Гагаринская</a>
+            <a href="" class="nav_station">Заельцовская</a>
+        </div>
+        <div class="nav_line_name">дзержинская</div>
+        <div class="nav_stations">
+            <a href="" class="nav_station">Площадь Гарина Михайловского</a>
+            <a href="" class="nav_station">Сибирская</a>
+            <a href="" class="nav_station">Маршала Покрышкина</a>
+            <a href="" class="nav_station">Берёзовая роща</a>
+            <a href="" class="nav_station">Золотая нива</a>
+        </div>
+    </section>
+
+    <section class="mob_menu">
+        <div class="icons_wrapper">
+            <div class="langIcons">
+                <div class="langIcon" id="ru">RU</div>
+                <div class="langIcon" id="en">EN</div>
+            </div>
+            <div class="menu_btn" id="close"><img src="img/close_btn.svg" alt=""></div>
+        </div>
+        <div class="stations">Станции <img src="img/open_icon.svg" alt=""></div>
+        <section class="nav_menu">
+            <div class="nav_line_name">Ленинская</div>
+            <div class="nav_stations">
+                <a href="station.html" class="nav_station">Площадь маркса</a>
+                <a href="" class="nav_station">Студенческая</a>
+                <a href="" class="nav_station">Спортивная</a>
+                <a href="" class="nav_station">Речной вокзал</a>
+                <a href="" class="nav_station">Октябрьская</a>
+                <a href="" class="nav_station">Площадь Ленина</a>
+                <a href="" class="nav_station">Красный проспект</a>
+                <a href="" class="nav_station">Гагаринская</a>
+                <a href="" class="nav_station">Заельцовская</a>
+            </div>
+            <div class="nav_line_name">дзержинская</div>
+            <div class="nav_stations">
+                <a href="" class="nav_station">Площадь Гарина Михайловского</a>
+                <a href="" class="nav_station">Сибирская</a>
+                <a href="" class="nav_station">Маршала Покрышкина</a>
+                <a href="" class="nav_station">Берёзовая роща</a>
+                <a href="" class="nav_station">Золотая нива</a>
+            </div>
+        </section>
+        <a class="about_btn" href="index.html#about">О нас</a>
+    </section>
+    <section class="firstScreen">
+        <div class="main">
+            <div class="mainTitle">
+                <h1>Путь вдоль метрополитена</h1>
+            </div>
+            <div class="lower_part">
+                <div class="slogan">Позвольте провести вас простой дорогой вместе с метрополитеном Новосибирска</div>
+                <a href="#slide" class="down_btn"> <img src="img/down_icon.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="info">
+            <div class="row_item">
+                <div class="row_title">18,3 км</div>
+                <div class="row_info">Маршрут</div>
+            </div>
+            <div class="row_item">
+                <div class="row_title">7 часов</div>
+                <div class="row_info">Длительность</div>
+            </div>
+            <div class="row_item">
+                <div class="row_title">Русский</div>
+                <div class="row_info">Язык</div>
+            </div>
+            <div class="row_item">
+                <div class="row_title">4/5</div>
+                <div class="row_info">Сложность</div>
+            </div>
+            <div class="row_item">
+                <div class="row_title">Перевод</div>
+                <div class="row_info">На Английский</div>
+            </div>
+            <div class="row_item">
+                <div class="row_title">0 ₽</div>
+                <div class="row_info">Стоимость</div>
+            </div>
+        </div>
+        <div class="about_info">
+            <div class="about_title">Новосибирский метрополитен</div>
+            <div class="about_text">Новосибирский метрополитен является самым восточным и третьим по дате открытия в
+                России, после Москвы и Санкт-Петербурга. Он был запущен в эксплуатацию 7 января 1986 года. Система
+                состоит из двух линий — Ленинской и Дзержинской, которые пересекаются на станции «Площадь Ленина»,
+                образуя пересадочный узел.</div>
+            <div class="about_text">Визитной карточкой новосибирского метра является уникальный крытый метромост через
+                реку Обь, который считается самым длинным сооружением такого типа в мире. Несмотря на относительно
+                небольшое количество станций, метрополитен ежедневно перевозит более 200 тысяч пассажиров, значительно
+                разгружая наземный транспорт. Он остаётся одним из самых быстрых и надёжных способов передвижения.</div>
+        </div>
+    </section>
+    <section class="choise" id="slide">
+        <div class="choise_title">Ленинская линия</div>
+        <div class="choise_description">Откуда начать маршрут?</div>
+        <div class="metro_line">
+            <a href="#1" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">площадь маркса</div>
+            </a>
+            <a href="#2" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">студенческая</div>
+            </a>
+            <a href="#3" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">спортивная</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">речной вокзал</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">октябрьская</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">площадь ленина</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">красный проспект</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">гагаринская</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">заельцовская</div>
+            </a>
+            <img src="img/line.png" alt="">
+
+        </div>
+    </section>
+    <section class="Line Len">
+        <div class="line"></div>
+        <div class="station" id="1">
+            <div class="mark_content">
+                <div class="mark"><img class="plus" src="img/plus.svg" alt=""></div>
+                <div class="station_title mob">Площадь Маркса</div>
+            </div>
+            <div class="station_content">
+                <div class="text">
+                    <div class="station_title">Площадь Маркса</div>
+                    <div class="station_date">28 июля 1991 года</div>
+                    <div class="station_info">
+                        <div class="mainInfo">Конечная станция Ленинской линии Новосибирского метрополитена.</div>
+                        <div class="architects">Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</div>
+                        <a href="station.html" class="station_btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="picture"><img src="img/station images/image 1.png" alt=""></div>
+            </div>
+        </div>
+        <div class="station" id="2">
+            <div class="mark_content">
+                <div class="mark"><img class="plus" src="img/plus.svg" alt=""></div>
+                <div class="station_title mob">Студенческая</div>
+            </div>
+            <div class="station_content">
+                <div class="text">
+                    <div class="station_title">Студенческая</div>
+                    <div class="station_date">28 июля 1991 года</div>
+                    <div class="station_info">
+                        <div class="mainInfo">Конечная станция Ленинской линии Новосибирского метрополитена.</div>
+                        <div class="architects">Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</div>
+                        <a href="station.html" class="station_btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="picture"><img src="img/station images/image 2.png" alt=""></div>
+            </div>
+        </div>
+        <div class="station" id="3">
+            <div class="mark_content">
+                <div class="mark"><img class="plus" src="img/plus.svg" alt=""></div>
+                <div class="station_title mob">Спортивная</div>
+            </div>
+            <div class="station_content">
+                <div class="text">
+                    <div class="station_title">Спортивная</div>
+                    <div class="station_date">28 июля 1991 года</div>
+                    <div class="station_info">
+                        <div class="mainInfo">Конечная станция Ленинской линии Новосибирского метрополитена.</div>
+                        <div class="architects">Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</div>
+                        <a href="station.html" class="station_btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="picture"><img src="img/station images/image 3.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="choise dz">
+        <div class="choise_title">дзержинская линия</div>
+        <div class="choise_description">Откуда начать маршрут?</div>
+        <div class="metro_line">
+            <a href="#10" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon2.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">Площадь Гарина Михайловского</div>
+            </a>
+            <a href="#11" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon2.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">Сибирская</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon2.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">Маршала Покрышкина</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon2.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">Берёзовая роща</div>
+            </a>
+            <a href="#" class="mini_station">
+                <div class="station_icon"><img src="img/station_icon2.png" alt=""></div>
+                <div class="station_mark"></div>
+                <div class="mini_station_name">Золотая нива</div>
+            </a>
+            <img src="img/line2.png" alt="">
+
+        </div>
+    </section>
+    <section class="Line dz">
+        <div class="line"></div>
+        <div class="station" id="10">
+            <div class="mark_content">
+                <div class="mark"><img class="plus" src="img/plus.svg" alt=""> <img class="minus" src="img/minus.svg"
+                        alt=""></div>
+                <div class="station_title mob">Площадь Гарина Михайловского</div>
+            </div>
+            <div class="station_content">
+                <div class="text">
+                    <div class="station_title">Площадь Гарина Михайловского</div>
+                    <div class="station_date">28 июля 1991 года</div>
+                    <div class="station_info">
+                        <div class="mainInfo">Конечная станция Ленинской линии Новосибирского метрополитена.</div>
+                        <div class="architects">Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</div>
+                        <div class="station_btn">Подробнее</div>
+                    </div>
+                </div>
+                <div class="picture"><img src="img/station images/image 10.png" alt=""></div>
+            </div>
+        </div>
+        <div class="station" id="11">
+            <div class="mark_content">
+                <div class="mark"><img class="plus" src="img/plus.svg" alt=""> <img class="minus" src="img/minus.svg"
+                        alt=""></div>
+                <div class="station_title mob">Сибирская</div>
+            </div>
+            <div class="station_content">
+                <div class="text">
+                    <div class="station_title">Сибирская</div>
+                    <div class="station_date">28 июля 1991 года</div>
+                    <div class="station_info">
+                        <div class="mainInfo">Конечная станция Ленинской линии Новосибирского метрополитена.</div>
+                        <div class="architects">Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</div>
+                        <div class="station_btn">Подробнее</div>
+                    </div>
+                </div>
+                <div class="picture"><img src="img/station images/image 11.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="nrav" id="about">
+        <div class="nrav_title">НРАВ</div>
+        <div class="container">
+            <div class="nrav_info">«НРаВ» — это не просто проект, а бренд-платформа, объединяющая культурные,
+                образовательные, научные и городские события под одним слоганом. <span>Его главная цель — изменить
+                    восприятие
+                    города и показать его не только как промышленный и деловой центр, но и как место, где рождаются
+                    идеи,
+                    где культура и наука стимулируют творческое мышление и инновации.</span></div>
+            <div class="nrav_img"><img src="img/nrav.png" alt=""></div>
+        </div>
+        <div class="nrav_info mob">Его главная цель — изменить восприятие
+            города и показать его не только как промышленный и деловой центр, но и как место, где рождаются идеи,
+            где культура и наука стимулируют творческое мышление и инновации.</div>
+    </section>
+    <section class="author">
+        <div class="author_img"><img src="img/Dina.png" alt=""></div>
+        <div class="author_title">автор <span>маршрута</span> <br> Исаченко Диана</div>
+        <div class="author_info">Автор маршрута – Диана Исаченко, опытный волонтер, побывавшая на множестве мероприятий
+            в роли как тимлидера, так и обычного волонтера. За свои годы она посетила множество городов России и активно
+            использовала путеводители, что вдохновило её на создание собственного проекта.</div>
+        <div class="author_info">Диана много времени проводит в общении с людьми разных возрастов и интересов, поэтому
+            маршрут разработан так, чтобы быть интересным и доступным для каждого. Её цель – сделать путешествия
+            увлекательными и насыщенными для всех, кто к ним присоединится.</div>
+        <a href="https://t.me/dialikk" target="_blank" class="author_btn">
+            <div class="btn_icon"></div>
+            <div class="btn_title">Узнать больше</div>
+        </a>
+    </section>
+    <section class="footer">
+        <div class="footer_cont">
+            <div class="info_cont">
+                <div class="logo">
+                    <div class="logo_icon"><img src="img/SibWay.png" alt=""></div>
+                    <div class="logo_title">SibWay</div>
+                </div>
+                <div class="contact">
+                    <div class="contact_name">НРАВ</div>
+                    <div class="contact_links"><a href=""><img src="img/Vector-1.svg" alt=""></a> <a href=""><img
+                                src="img/Vector.svg" alt=""></a></div>
+                </div>
+                <div class="contact">
+                    <div class="contact_name">Исаченко Диана Андреевна</div>
+                    <div class="contact_links"><a href=""><img src="img/Vector-1.svg" alt=""></a> <a href=""><img
+                                src="img/Vector-2.svg" alt=""></a> </div>
+                </div>
+            </div>
+            <div class="links_cont">
+                <div class="link_line">
+                    <div class="link_line_title">дзержинская</div>
+                    <div class="link_stations">
+                        <a href="" class="link_station">Площадь Гарина Михайловского</a>
+                        <a href="" class="link_station">Сибирская</a>
+                        <a href="" class="link_station">Маршала Покрышкина</a>
+                        <a href="" class="link_station">Берёзовая роща</a>
+                        <a href="" class="link_station">Золотая нива</a>
+                    </div>
+                </div>
+                <div class="link_line">
+                    <div class="link_line_title">Ленинская</div>
+                    <div class="link_stations">
+                        <a href="" class="link_station">Площадь маркса</a>
+                        <a href="" class="link_station">Студенческая</a>
+                        <a href="" class="link_station">Спортивная</a>
+                        <a href="" class="link_station">Речной вокзал</a>
+                        <a href="" class="link_station">Октябрьская</a>
+                        <a href="" class="link_station">Площадь Ленина</a>
+                        <a href="" class="link_station">Красный проспект</a>
+                        <a href="" class="link_station">Гагаринская</a>
+                        <a href="" class="link_station">Заельцовская</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
