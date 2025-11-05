@@ -1280,6 +1280,7 @@ iframe{
     padding: 1vw 3vw;
     background-color: var(--red);
     border: .2vw solid var(--red);
+    color: var(--white);
     border-radius: .6vw;
     text-align: center;
     font-size: 1vw;

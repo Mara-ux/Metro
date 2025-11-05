@@ -15,7 +15,7 @@
 <body>
     <div class="admin_menu_btn"><img src="img/menuIcon.svg" alt=""></div>
     <div class="nav_panel">
-        <div class="adm_wrapper">
+        <form class="adm_wrapper">
             <div class="panel_info">
                 <div class="closeBtn"><img src="img/close_btn.svg" alt=""></div>
                 <div class="panel_icon"><img src="img/admin_icon.png" alt=""></div>
@@ -48,14 +48,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="admin_btns">
-            <div class="admin_btn">сохранить</div>
+            <button type="submit"form="mainEdit" class="admin_btn">сохранить</button>
             <div class="admin_btn">выйти</div>
         </div>
     </div>
 
-    <div class="station_admin admin">
+    <form action="" id="mainEdit" class="station_admin admin">
         <div class="station_admin_titlebar">
             <div class="station_admin_title">Площадь маркса</div>
             <div class="delite_btn">Удалить станцию</div>
@@ -63,24 +63,24 @@
         <div class="station_edit">
             <div class="edit_item text_info">
                 <div class="edit_item_title">Заголовок</div>
-                <input type="text" placeholder="Площадь Маркса">
-                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса" required>
+                <input type="text" placeholder="Площадь Маркса" required>
             </div>
             <div class="edit_item text_info">
                 <div class="edit_item_title">Дата</div>
-                <input type="text" placeholder="Площадь Маркса">
-                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса" required>
+                <input type="text" placeholder="Площадь Маркса" required>
             </div>
             <div class="edit_item text_info">
                 <div class="edit_item_title">описание</div>
-                <input type="text" placeholder="Площадь Маркса">
-                <input type="text" placeholder="Площадь Маркса">
+                <input type="text" placeholder="Площадь Маркса" required>
+                <input type="text" placeholder="Площадь Маркса" required>
             </div>
             <div class="edit_item image_loading">
                 <div class="edit_item_title">фото</div>
                 <div class="imges_wrapper">
                     <label for="file-upload" class="custom-file-upload"><img src="img/photo.png" alt=""></label>
-                    <input id="file-upload" type="file" accept="image/*">
+                    <input id="file-upload" type="file" accept="image/*" required>
                     <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
                     <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
                     <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
@@ -89,8 +89,8 @@
             <div class="edit_item comlex">
                 <div class="edit_item text_info">
                     <div class="edit_item_title">Заголовок</div>
-                    <input type="text" placeholder="Площадь Маркса">
-                    <input type="text" placeholder="Площадь Маркса">
+                    <input type="text" placeholder="Площадь Маркса" required>
+                    <input type="text" placeholder="Площадь Маркса" required>
                 </div>
                 <div class="edit_item inner_wrapper">
                     <div class="edit_item inner">
@@ -98,15 +98,15 @@
                         <div class="inner_item">
                             <div class="edit_item text_info">
                                 <div class="edit_item_title">Дата</div>
-                                <input type="text" placeholder="Площадь Маркса">
-                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса" required>
+                                <input type="text" placeholder="Площадь Маркса" required>
                             </div>
                         </div>
                         <div class="inner_item">
                             <div class="edit_item text_info">
                                 <div class="edit_item_title">описание</div>
-                                <input type="text" placeholder="Площадь Маркса">
-                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса" required>
+                                <input type="text" placeholder="Площадь Маркса" required>
                             </div>
                         </div>
                     </div>
@@ -128,20 +128,20 @@
                         <div class="inner_item">
                             <div class="edit_item text_info">
                                 <div class="edit_item_title">Заголовок</div>
-                                <input type="text" placeholder="Площадь Маркса">
-                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса" required>
+                                <input type="text" placeholder="Площадь Маркса" required>
                             </div>
                         </div>
                         <div class="inner_item">
                             <div class="edit_item text_info">
                                 <div class="edit_item_title">описание</div>
-                                <input type="text" placeholder="Площадь Маркса">
-                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса" required>
+                                <input type="text" placeholder="Площадь Маркса" required>
                             </div>
                         </div>
                         <div class="imges_wrapper">
                             <label for="file-upload" class="custom-file-upload"><img src="img/photo.png" alt=""></label>
-                            <input id="file-upload" type="file" accept="image/*">
+                            <input id="file-upload" type="file" accept="image/*" required>
                             <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
                             <div class="loaded_image"><img src="img/station_about/1.jpg" alt=""></div>
                         </div>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="edit_item text_info">
                     <div class="edit_item_title">Карта</div>
-                    <input type="text" placeholder="Площадь Маркса">
+                    <input type="text" placeholder="Площадь Маркса" required>
                 </div>
                 <div class="edit_item inner_wrapper">
                     <div class="iner_title">Выход 1</div>
@@ -167,8 +167,8 @@
                         <div class="inner_item">
                             <div class="edit_item text_info">
                                 <div class="edit_item_title">Заголовок</div>
-                                <input type="text" placeholder="Площадь Маркса">
-                                <input type="text" placeholder="Площадь Маркса">
+                                <input type="text" placeholder="Площадь Маркса" required>
+                                <input type="text" placeholder="Площадь Маркса" required>
                             </div>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
             </div>
 
         </div>
-    </div>
+    </form>
 </body>
 
 </html>
