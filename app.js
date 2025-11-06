@@ -18,6 +18,7 @@ let mobStationBtns = document.querySelectorAll('.mark_content');
 let mobStations = document.querySelectorAll('.station_content');
 let menu_btns = document.querySelectorAll('.menu_btn');
 let mob_menu = document.querySelector('.mob_menu');
+let hiddenElements = document.querySelectorAll('.hidden');
 
 let historyBtn = document.querySelector('.mob_history_title');
 let history = document.querySelector('.mob_history_wrapper');
@@ -71,6 +72,18 @@ if (admin) {
 
 
 } else {
+    document.querySelectorAll('.station').forEach((station, index) => {
+        station.style.transitionDelay = `${(index + 1) * 100}ms`;
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+    hiddenElements.forEach((el) => observer.observe(el));
     menu_btns.forEach((menu_btn, index) => {
         menu_btn.onclick = () => {
             mob_menu.classList.toggle('active');

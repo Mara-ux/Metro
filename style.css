@@ -81,6 +81,19 @@ section {
     padding: 0 7vw;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
 /* --- Nav --- */
 
 nav {
@@ -267,6 +280,10 @@ nav {
     width: 40vw;
     text-align: center;
     text-transform: uppercase;
+}
+
+.lower_part{
+    transition-delay: 300ms;
 }
 
 .slogan {
@@ -549,6 +566,8 @@ nav {
     padding: 3.75vw 0;
     align-items: flex-start;
 }
+
+
 
 .station_content {
     display: flex;
