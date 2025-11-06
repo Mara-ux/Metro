@@ -166,9 +166,21 @@ document.querySelectorAll('a[href*="#"]').forEach(anchor => {
             const target = document.getElementById(targetId);
 
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                // Временно убираем transform для корректного позиционирования
+                const originalTransform = target.style.transform;
+                target.style.transform = 'none';
+                
+                // Ждем следующего frame для применения изменений
+                requestAnimationFrame(() => {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Возвращаем transform обратно после скролла
+                    setTimeout(() => {
+                        target.style.transform = originalTransform;
+                    }, 1000);
                 });
             }
         }
